@@ -1,4 +1,4 @@
-const query = require('../../util/query')
+const query = require('../../../util/query')
 
 const list = async (ctx, next) => {
   await query('select * from article;', (result) => {
