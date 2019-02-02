@@ -1,18 +1,7 @@
-const article = {
-  // article list
-  list: async ctx => {
-    console.log(ctx.params)
-    ctx.body = [
-      { title: 'title-0', author: 'ming' },
-      { title: 'title-1', author: 'ming' }
-    ]
-  },
+const list = require('./article/list')
+const detail = require('./article/detail')
+const write = require('./article/write')
 
-  // article detail
-  detail: async ctx => {
-    console.log(ctx.params)
-    ctx.body = { title: 'title-0', content: 'content' }
-  }
-}
+const article = { list, detail, write }
 
 module.exports = article
