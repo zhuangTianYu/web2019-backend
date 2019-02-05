@@ -1,1 +1,1 @@
-{"title":"koa-bodyparser，真香！","author":"庄天宇","type":3,"content":["koa项目获取不到post请求的params，网上推荐安装koa-bodyparser依赖。我安装了依赖以后，package.json里多了很多项，看起来有点乱","“我是一个有操守的开发人员，我要自己写一个。”<br />于是网上找了找demo，攒(cuan，二声)了一个函数出来。结果调试了很久，一直有转化的问题。倒腾到了挺晚，依旧没弄好","今早起来，我还是安装koa-bodyparser吧！","真香啊！"]}
+{"title":"koa-bodyparser，真香！","author":"庄天宇","type":3,"content":["koa项目获取不到post请求的params，网上推荐安装koa-bodyparser依赖。我安装了依赖以后，package.json里多了很多项，看起来有点乱","“我是一个有操守的开发人员，我要自己写一个。”于是网上找了找demo，攒(cuan，二声)了一个函数出来。结果调试了很久，一直有转化的问题。倒腾到了挺晚，依旧没弄好","今早起来，我还是安装koa-bodyparser吧！","真香啊！"],"comment":[]}
