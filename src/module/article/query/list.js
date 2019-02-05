@@ -8,7 +8,7 @@ const list = async (ctx, next) => {
     type === '0'
       ? ''
       : `where type = ${type}`
-  const order = 'order by createTime'
+  const order = 'order by createTime desc'
   const selectSql = `${select} ${where} ${order}`
   await query(selectSql, (result) => {
     ctx.body = result
