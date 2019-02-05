@@ -23,8 +23,18 @@ const detail = async (ctx, next) => {
   })
 
   await service.then((data) => {
-    const { content, comment } = JSON.parse(data)
-    Object.assign(body, { content, comment })
+    const { content } = JSON.parse(data)
+    Object.assign(body, { content })
+    next()
+  })
+
+  const commentSql = `
+    select userName, content, DATE_FORMAT(createTime, "%Y-%m-%d") as createTime from comment
+    where articleID = ${id} order by createTime
+  `
+  await query(commentSql, result => {
+    const comment = result
+    Object.assign(body, { comment })
   })
 
   // 返回数据
